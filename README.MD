@@ -1,6 +1,6 @@
 ---- Sistema para um clube
 
--- Membros
+- Membros
 Pedro Henrique Schroeder Bolfe
 Pedor Miotto Mujica
 Eliseu da Luz Silva
