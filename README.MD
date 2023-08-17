@@ -4,7 +4,7 @@
 
 Pedro Henrique Schroeder Bolfe - https://github.com/pedrobolfe
 
-Pedor Miotto Mujica - https://github.com/pedromujica1
+Pedro Miotto Mujica - https://github.com/pedromujica1
 
 Eliseu da Luz Silva - https://github.com/eliseuDLS
 
