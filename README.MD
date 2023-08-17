@@ -1,6 +1,6 @@
-## Sistema para um clube
+# Sistema para um clube
 
-# Membros
+## Membros
 
 - Pedro Henrique Schroeder Bolfe - https://github.com/pedrobolfe
 - Pedro Miotto Mujica - https://github.com/pedromujica1
