@@ -2,7 +2,7 @@
 
 - Membros
 
-Pedro Henrique Schroeder Bolfe - github.com/pedrobolfe
+Pedro Henrique Schroeder Bolfe - https://github.com/pedrobolfe
 
 Pedro Miotto Mujica - https://github.com/pedromujica1
 
