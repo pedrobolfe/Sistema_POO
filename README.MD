@@ -1,4 +1,4 @@
-# Sistema para um clube
+# Sistema para um Clube Recreativo
 
 ## Membros
 
