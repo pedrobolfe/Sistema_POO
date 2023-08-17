@@ -2,11 +2,11 @@
 
 - Membros
 
-Pedro Henrique Schroeder Bolfe
+Pedro Henrique Schroeder Bolfe - https://github.com/pedrobolfe
 
-Pedor Miotto Mujica
+Pedor Miotto Mujica - https://github.com/pedromujica1
 
-Eliseu da Luz Silva
+Eliseu da Luz Silva - https://github.com/eliseuDLS
 
 Julio Cesar Spezia
 
