@@ -8,7 +8,7 @@ Pedro Miotto Mujica - https://github.com/pedromujica1
 
 Eliseu da Luz Silva - https://github.com/eliseuDLS
 
-Julio Cesar Spezia - https://github.com/Leuis0101
+Julio Cesar Spezia - https://github.com/julioCSpezia
 
-Luiz Felipe Salbego Esperanca
-para fi
+Luiz Felipe Salbego Esperança - https://github.com/Leuis0101
+
