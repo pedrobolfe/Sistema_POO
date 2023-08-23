@@ -6,14 +6,6 @@ public class Pessoa{
     public String telefone;
     public String endereco;
 
-    //Construtor
-    public Pessoa(String nome, String email, String telefone, String endereco) {
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-        this.endereco = endereco;
-    }
-
     //getters 
     public String getNome() {
         return nome;
