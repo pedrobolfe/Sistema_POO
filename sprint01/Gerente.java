@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 
-public class Gerente {
+class Gerente {
+    private ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
-    //atributos
-    private ArrayList<Funcionario> funcionariosCadastrados = new ArrayList<Funcionario>();
-
-    public ArrayList<Funcionario> cadastrarFuncionarios(String nome, String email,String endereco,String telefone,String cargo,double salario){
-        this.funcionariosCadastrados.add(new Funcionario(nome, email, endereco, telefone, cargo, salario));
-        return this.funcionariosCadastrados;
-    }  
+    // Método para cadastrar um novo funcionário
+    public void cadastrarFuncionarios(String nome, String endereco, String telefone, String email, String cargo, double salario) {
+        Funcionario novoFuncionario = new Funcionario(nome, endereco, telefone, email, cargo, salario);
+        funcionarios.add(novoFuncionario);
+    }
 }
