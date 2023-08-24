@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Associado extends Pessoa {
@@ -38,7 +39,15 @@ public class Associado extends Pessoa {
     }
     public void setDependentes(ArrayList<String> dependentes) {
         this.dependentes = dependentes;
-    }
     
+    }
 
+    @Override
+    public String toString(){
+        String display = "Nome: "+nome+"Email: "+"Endereco: "+endereco+"Telefone: "+telefone+" "+"Dados Pagamento:";
+        return display;
+    }
+
+
+    
 }

@@ -41,8 +41,8 @@ public class Funcionario extends Pessoa {
     public double getSalario() {
         return salario;
     }
-    public ArrayList<Associado> getAssociadosCadastrados() {
-        return associadosCadastrados;
+    public String getAssociadosCadastrados() {
+        return associadosCadastrados.toString();
     }
     
     //setters
@@ -52,5 +52,11 @@ public class Funcionario extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public String toString(){
+        return "[Nome:"+nome+"";
+    }
+
     
 }
