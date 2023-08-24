@@ -9,8 +9,6 @@ public class Associado extends Pessoa {
     //Contém status do pagemento e forma de pagamento
     private ArrayList<String> dadosPagemento;
     
-
-
     //construtor 
     public Associado(String nome, String email,String endereco,String telefone,ArrayList<String> dadosPagemento,ArrayList<String> dependentes,ArrayList<String> atividadesEsportivas){
         super(nome,email,telefone,endereco);
@@ -39,7 +37,6 @@ public class Associado extends Pessoa {
     }
     public void setDependentes(ArrayList<String> dependentes) {
         this.dependentes = dependentes;
-    
     }
 
     @Override
@@ -47,5 +44,4 @@ public class Associado extends Pessoa {
         String display = "Nome: "+nome+" Email: "+"Endereco: "+endereco+" Telefone: "+telefone+" "+" Dados Pagamento: "+Arrays.toString(dadosPagemento.toArray())+" Dependentes: "+Arrays.toString(dependentes.toArray())+" Atividades esportivas: "+Arrays.toString(atividadesEsportivas.toArray());
         return display;
     }
-
 }
