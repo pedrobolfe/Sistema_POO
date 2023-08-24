@@ -7,7 +7,7 @@ public class Gerente {
 
 
 
-    public ArrayList<Funcionario> cadastrarFuncionarios(String nome, String email,String endereco,String telefone,String cargo,String salario){
+    public ArrayList<Funcionario> cadastrarFuncionarios(String nome, String email,String endereco,String telefone,String cargo,double salario){
         
         this.funcionariosCadastrados = new ArrayList<Funcionario>();
         this.funcionariosCadastrados.add(new Funcionario(nome, email, endereco, telefone, cargo, salario));
