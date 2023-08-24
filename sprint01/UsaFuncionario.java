@@ -11,6 +11,7 @@ public class UsaFuncionario {
 
         funcionario1.cadastrarAssociado("bruce banner","banner@hotmail.com","avenida das pombas","69357841",dadosPagemento_lista,dependentes_lista);
 
+    
         funcionario1.cadastrarAssociado("kurt kobain","banner@hotmail.com","avenida das pombas","69357841",dadosPagemento_lista,dependentes_lista);
 
         String cadastrados = funcionario1.getAssociadosCadastrados();
