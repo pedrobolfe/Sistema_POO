@@ -1,5 +1,5 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Associado extends Pessoa {
     
@@ -44,10 +44,8 @@ public class Associado extends Pessoa {
 
     @Override
     public String toString(){
-        String display = "Nome: "+nome+"Email: "+"Endereco: "+endereco+"Telefone: "+telefone+" "+"Dados Pagamento:";
+        String display = "Nome: "+nome+" Email: "+"Endereco: "+endereco+" Telefone: "+telefone+" "+" Dados Pagamento: "+Arrays.toString(dadosPagemento.toArray())+" Dependentes: "+Arrays.toString(dependentes.toArray())+" Atividades esportivas: "+Arrays.toString(atividadesEsportivas.toArray());
         return display;
     }
 
-
-    
 }

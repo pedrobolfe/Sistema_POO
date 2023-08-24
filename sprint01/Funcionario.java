@@ -7,11 +7,9 @@ public class Funcionario extends Pessoa {
     public String cargo;
     public double salario;
 
-    //Armazena funcionarios cadastrados
-    //private ArrayList<Funcionario> funcionariosCadastrados;
 
     //Armazenar Associados cadastrados
-    private ArrayList<Associado> associadosCadastrados;
+    private ArrayList<Associado> associadosCadastrados =new ArrayList<Associado>();
 
     //construtor
     public Funcionario(String nome, String email,String endereco,String telefone,String cargo,double salario){
@@ -23,9 +21,12 @@ public class Funcionario extends Pessoa {
 
     //metódos
     public ArrayList<Associado> cadastrarAssociado(String nome, String email,String endereco,String telefone,ArrayList<String> dadosPagemento,ArrayList<String> dependentes){
-        //Instanciando a ArrayList de classes 
-        this.associadosCadastrados = new ArrayList<Associado>();
-        this.associadosCadastrados.add(new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, dependentes));
+    
+    
+        Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, dependentes);
+        this.associadosCadastrados.add(novoAssociado);
+        
+        
         
         return this.associadosCadastrados;
     }
@@ -53,10 +54,6 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
     }
 
-    @Override
-    public String toString(){
-        return "[Nome:"+nome+"";
-    }
 
     
 }
