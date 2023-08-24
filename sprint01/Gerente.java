@@ -1,17 +1,18 @@
-public class Gerente extends Funcionario {
-    private double bonus;
-    private String departamento;
+import java.util.ArrayList;
 
-    public Gerente(String nome, double salarioBase, double bonus, String departamento) {
-        super(nome, salarioBase);
-        this.bonus = bonus;
-        this.departamento = departamento;
-    }
+public class Gerente {
 
-    @Override
-    public double calcularSalarioTotal() {
-        return super.calcularSalarioTotal() + bonus;
+    //atributos
+    private ArrayList<Funcionario> funcionariosCadastrados;
+
+
+
+    public ArrayList<Funcionario> cadastrarFuncionarios(String nome, String email,String endereco,String telefone,String cargo,String salario){
+        
+        this.funcionariosCadastrados = new ArrayList<Funcionario>();
+        this.funcionariosCadastrados.add(new Funcionario(nome, email, endereco, telefone, cargo, salario));
+        return this.funcionariosCadastrados;
+
     }
+    
 }
-
-
