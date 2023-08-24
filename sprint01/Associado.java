@@ -41,7 +41,7 @@ public class Associado extends Pessoa {
 
     @Override
     public String toString(){
-        String display = "Nome: "+nome+" Email: "+"Endereco: "+endereco+" Telefone: "+telefone+" "+" Dados Pagamento: "+Arrays.toString(dadosPagemento.toArray())+" Dependentes: "+Arrays.toString(dependentes.toArray())+" Atividades esportivas: "+Arrays.toString(atividadesEsportivas.toArray());
+        String display = "Nome: " + nome + "\nEmail: " + email + "\nEndereco: " + endereco + "\nTelefone: " + telefone + "\nDados Pagamento: " + Arrays.toString(dadosPagemento.toArray()) + "\nDependentes: " + Arrays.toString(dependentes.toArray()) + "\nAtividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray());
         return display;
     }
 }
