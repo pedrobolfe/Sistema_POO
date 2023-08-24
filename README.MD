@@ -1,6 +1,6 @@
 # Sistema para um Clube Recreativo
 
-## Membros
+## Equipe
 
 - [Pedro Henrique Schroeder Bolfe ](https://github.com/pedrobolfe)
 - [Pedro Miotto Mujica](https://github.com/pedromujica1)
