@@ -20,12 +20,11 @@ public class Funcionario extends Pessoa {
 
 
     //metódos
-    public ArrayList<Associado> cadastrarAssociado(String nome, String email,String endereco,String telefone,ArrayList<String> dadosPagemento,ArrayList<String> dependentes){
+    public void cadastrarAssociado(String nome, String email,String endereco,String telefone,ArrayList<String> dadosPagemento,ArrayList<String> dependentes){
     
     
         Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, dependentes);
         this.associadosCadastrados.add(novoAssociado);
-        return this.associadosCadastrados;
     }
 
     //public listarAssociados(){}
@@ -50,6 +49,7 @@ public class Funcionario extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
 
 
     
