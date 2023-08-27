@@ -25,9 +25,6 @@ public class Funcionario extends Pessoa {
     
         Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, dependentes);
         this.associadosCadastrados.add(novoAssociado);
-        
-        
-        
         return this.associadosCadastrados;
     }
 
