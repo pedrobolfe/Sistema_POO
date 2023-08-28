@@ -1,12 +1,9 @@
 import java.util.ArrayList;
 
 public class Funcionario extends Pessoa {
-   
-    
     //Atributos
     public String cargo;
     public double salario;
-
 
     //Armazenar Associados cadastrados
     private ArrayList<Associado> associadosCadastrados =new ArrayList<Associado>();
@@ -18,7 +15,6 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
     }
 
-
     //metódos
     public void cadastrarAssociado(String nome, String email,String endereco,String telefone,ArrayList<String> dadosPagemento,ArrayList<String> dependentes){
     
@@ -28,8 +24,6 @@ public class Funcionario extends Pessoa {
     }
 
     //public listarAssociados(){}
-
-
 
     //getters
     public String getCargo() {
@@ -49,8 +43,4 @@ public class Funcionario extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
-
-
-    
 }
