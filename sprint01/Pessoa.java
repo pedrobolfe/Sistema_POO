@@ -45,11 +45,12 @@ public class Pessoa{
     }
 
     public String listarInfo(){
-        String display_dados = "nome: "+this.nome + "E-mail: "+this.email+"Telefone: "+this.telefone+"Endereço: "+this.endereco;
+        String display_dados = "nome: "+ this.nome + "E-mail: " + this.email + "Telefone: " + this.telefone + "Endereço: " + this.endereco;
         return display_dados;
     }
 
     public void cadastrar(String nome, String endereco, String telefone){
-        //ArrayList<String> = 
+        novaPessoa = new Pessoa(nome, endereco, telefone)
+        this.Pessoa.add(novaPessoa);
     }
 }
