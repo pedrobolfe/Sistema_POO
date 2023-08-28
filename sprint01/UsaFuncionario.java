@@ -5,13 +5,13 @@ public class UsaFuncionario {
     public static void main(String[] args) {
         Funcionario funcionario1 = new Funcionario("Peter Parker", "peterparker@gmail.com", "Queens, New York", "915633874", "Secretário", 1200.65);
 
-        ArrayList<String> dependentes_lista = new ArrayList<String>(Arrays.asList("dependente1", "dependente2", "dependente3"));
+        String dependentes = "aaaa";
+        ArrayList<String> atividadesEsportivas= new ArrayList<String>();
 
-        funcionario1.cadastrarAssociado("bruce banner","banner@hotmail.com","avenida das pombas","69357841","rrr", dependentes_lista);
-
-        funcionario1.cadastrarAssociado("kurt kobain","kobain@hotmail.com","rua boboleu, 988","7687976","lll" ,dependentes_lista);
-
-        String cadastrados = funcionario1.getAssociadosCadastrados();
+        funcionario1.cadastrarDados("a", "aaaaa", "aaa", "aaaaaaaaaa", "pix", dependentes, atividadesEsportivas);
+        funcionario1.cadastrarDados("pedro", "aaaaa", "aaa", "aaaaaaaaaa", "pix", dependentes, atividadesEsportivas);
+        funcionario1.cadastroFuncionario("pedro", "aaaaa", "aaa", "aaaaaaaaaa", "pix",222.6);
+        String cadastrados = funcionario1.listarInfo();
         System.out.println(cadastrados);        
     }
 }

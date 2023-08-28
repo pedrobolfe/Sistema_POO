@@ -6,7 +6,8 @@ public class Funcionario extends Pessoa {
     public double salario;
 
     //Armazenar Associados cadastrados
-    private ArrayList<Associado> associadosCadastrados =new ArrayList<Associado>();
+    private ArrayList<ArrayList<Associado>> associadosCadastrados =new ArrayList<ArrayList<Associado>>();
+    private ArrayList<ArrayList<Funcionario>> funcionariossCadastrados =new ArrayList<ArrayList<Funcionario>>();
 
     //construtor
     public Funcionario(String nome, String email,String endereco,String telefone,String cargo,double salario){
@@ -16,14 +17,38 @@ public class Funcionario extends Pessoa {
     }
 
     //metódos
-    public void cadastrarAssociado(String nome, String email,String endereco,String telefone,ArrayList<String> dadosPagemento,ArrayList<String> dependentes){
-    
-    
-        Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, dependentes);
-        this.associadosCadastrados.add(novoAssociado);
+    public void cadastrarDados(String nome, String email,String endereco,String telefone,String dadosPagemento,String dependentes,ArrayList<String> atividadesEsportivas){
+        
+        //Lista para armazenar objeto
+        ArrayList<Associado> dadosAssociado = new ArrayList<Associado>();        
+        Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, atividadesEsportivas);
+        //Salvando objeto em uma lista
+        dadosAssociado.add(novoAssociado);
+        this.associadosCadastrados.add(dadosAssociado);
     }
 
-    //public listarAssociados(){}
+    public boolean autenticaGerente(){
+        if (this.cargo == "GERENTE"){
+            return true;
+        }
+        else {return false;}
+    }
+
+    public void cadastroFuncionario(String nome,String email, String endereco, String telefone, String cargo, double salario){
+        if (this.autenticaGerente() == true){
+            ArrayList<Funcionario> dadosFuncionario = new ArrayList<Funcionario>();
+            Funcionario novoFuncionario = new Funcionario(nome, email, endereco, telefone, cargo, salario);  
+            dadosFuncionario.add(novoFuncionario);
+            this.funcionariossCadastrados.add(dadosFuncionario);    
+        }
+        else if (this.autenticaGerente() == false) { System.out.println("VOCÊ NÃO TEM ACESSO A ESSE METÓDO!");}
+    }
+    
+    @Override
+    public String listarInfo(){
+        return associadosCadastrados.toString();
+    }
+    
 
     //getters
     public String getCargo() {
@@ -32,9 +57,8 @@ public class Funcionario extends Pessoa {
     public double getSalario() {
         return salario;
     }
-    public String getAssociadosCadastrados() {
-        return associadosCadastrados.toString();
-    }
+    
+   
     
     //setters
     public void setCargo(String cargo) {

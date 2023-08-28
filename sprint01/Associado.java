@@ -3,14 +3,13 @@ import java.util.Arrays;
 
 public class Associado extends Pessoa {
     
-    //metódos
-    //private ArrayList<String> dependentes;
+    //atributos
     private ArrayList<String> atividadesEsportivas;
-    //Contém status do pagemento e forma de pagamento
     private String dadosPagemento;
+    private String dependentes;
     
     //construtor 
-    public Associado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<String> dependentes,ArrayList<String> atividadesEsportivas){
+    public Associado(String nome, String email,String endereco,String telefone,String dadosPagemento,String dependentes,ArrayList<String> atividadesEsportivas){
         super(nome,email,telefone,endereco);
         this.dadosPagemento = dadosPagemento;
         this.dependentes = dependentes;
@@ -18,30 +17,28 @@ public class Associado extends Pessoa {
     }
 
     //getters  
-    public ArrayList<String> getDadosPagemento() {
+    public String getDadosPagemento() {
         return dadosPagemento;
     }
     public ArrayList<String> getAtividadesEsportivas() {
         return atividadesEsportivas;
     }
-    public ArrayList<String> getDependentes() {
-        return dependentes;
-    }
+   
 
     //setters
-    public void setDadosPagemento(ArrayList<String> dadosPagemento) {
+    public void setDadosPagemento(String dadosPagemento) {
         this.dadosPagemento = dadosPagemento;
     }
     public void setAtividadesEsportivas(ArrayList<String> atividadesEsportivas) {
         this.atividadesEsportivas = atividadesEsportivas;
     }
-    public void setDependentes(ArrayList<String> dependentes) {
-        this.dependentes = dependentes;
-    }
+    // public void setDependentes(ArrayList<String> dependentes) {
+    //     this.dependentes = dependentes;
+    // }
 
     @Override
     public String toString(){
-        String display = "Nome: " + nome + "\nEmail: " + email + "\nEndereco: " + endereco + "\nTelefone: " + telefone + "\nDados Pagamento: "  + "\nDependentes: " + Arrays.toString(dependentes.toArray()) + "\nAtividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray());
+        String display = "\nNome: " + nome + "\nEmail: " + email + "\nEndereco: " + endereco + "\nTelefone: " + telefone + "\nDados Pagamento: "  + "\nDependentes: " + "\nAtividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray())+ "\n";
         return display;
     }
 }
