@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Pessoa{
 
     //Atributos essenciais
@@ -40,5 +42,14 @@ public class Pessoa{
     }
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String listarInfo(){
+        String display_dados = "nome: "+this.nome + "E-mail: "+this.email+"Telefone: "+this.telefone+"Endereço: "+this.endereco;
+        return display_dados;
+    }
+
+    public void cadastrar(String nome, String endereco, String telefone){
+        //ArrayList<String> = 
     }
 }
