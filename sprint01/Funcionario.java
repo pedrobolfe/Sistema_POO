@@ -7,6 +7,7 @@ public class Funcionario extends Pessoa {
 
     //Armazenar Associados cadastrados
     private ArrayList<ArrayList<Associado>> associadosCadastrados =new ArrayList<ArrayList<Associado>>();
+    //Armazenar funcionarios cadastrados
     private ArrayList<ArrayList<Funcionario>> funcionariossCadastrados =new ArrayList<ArrayList<Funcionario>>();
 
     //construtor
@@ -17,7 +18,7 @@ public class Funcionario extends Pessoa {
     }
 
     //metódos
-    public void cadastrarDados(String nome, String email,String endereco,String telefone,String dadosPagemento,String dependentes,ArrayList<String> atividadesEsportivas){
+    public void cadastrarAssociado(String nome, String email,String endereco,String telefone,String dadosPagemento,String dependentes,ArrayList<String> atividadesEsportivas){
         
         //Lista para armazenar objeto
         ArrayList<Associado> dadosAssociado = new ArrayList<Associado>();        
@@ -44,9 +45,13 @@ public class Funcionario extends Pessoa {
         else if (this.autenticaGerente() == false) { System.out.println("VOCÊ NÃO TEM ACESSO A ESSE METÓDO!");}
     }
     
-    @Override
-    public String listarInfo(){
+    //Listagem de Associados cadastradados 
+    public String listarAssociados(){
         return associadosCadastrados.toString();
+    }
+    //Listagem de Funcionários cadastrados 
+    public String listarFuncionarios(){
+        return funcionariossCadastrados.toString();
     }
     
 
@@ -56,10 +61,8 @@ public class Funcionario extends Pessoa {
     }
     public double getSalario() {
         return salario;
-    }
-    
+    }   
    
-    
     //setters
     public void setCargo(String cargo) {
         this.cargo = cargo;

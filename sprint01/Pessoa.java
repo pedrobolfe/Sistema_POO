@@ -45,15 +45,14 @@ public class Pessoa{
         this.endereco = endereco;
     }
 
-    public String listarInfo(){
+    public String listarDados(){
         //String para mostrar dados cadastrados
-        String display_dados = "Nome: "+ this.nome +"\n"+ "E-mail: " + this.email +"\n"+ "Telefone: " + this.telefone+"\n" + "Endereço: " + this.endereco +"\n";
+        String display_dados = "\n"+"Nome: "+ this.nome +"\n"+ "E-mail: " + this.email +"\n"+ "Telefone: " + this.telefone+"\n" + "Endereço: " + this.endereco +"\n";
         //retorna String
         return display_dados;
     }
 
-    public void cadastrarDados(String nome,String email, String endereco, String telefone){
-        Pessoa novaPessoa = new Pessoa(nome,email,endereco,telefone);
-        this.pessoasCadastradas.add(novaPessoa);
+    public void cadastrarDados(Pessoa pessoa){
+        pessoasCadastradas.add(pessoa);
     }
 }
