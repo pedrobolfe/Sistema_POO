@@ -19,31 +19,27 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
 
     //metódos
     public void cadastrarAssociado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<Dependente> dependentes,ArrayList<String> atividadesEsportivas){
-        
-        //Lista para armazenar objeto
-        ArrayList<Associado> dadosAssociado = new ArrayList<Associado>();        
+        ArrayList<Associado> dadosAssociado = new ArrayList<Associado>();  //Array para armazenar objeto      
         Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, atividadesEsportivas);
         //Salvando objeto em uma lista
         dadosAssociado.add(novoAssociado);
         this.associadosCadastrados.add(dadosAssociado);
     }
+    // metodo booleano para conferir se gerente ou ñ  
+    public boolean autenticaGerente(){ // inicio metodo autenticaGerente
+        if (this.cargo == "GERENTE"){ // se o atributo cargo for igual a gerente retornara true para validação do cadastro
+            return true; // retorna true
+        } else {return false;} // retorna falso
+    } // fim metodo autenticaGerente
 
-    public boolean autenticaGerente(){
-        if (this.cargo == "GERENTE"){
-            return true;
-        }
-        else {return false;}
-    }
-
-    public void cadastroFuncionario(String nome,String email, String endereco, String telefone, String cargo, double salario){
-        if (this.autenticaGerente() == true){
+    public void cadastroFuncionario(String nome,String email, String endereco, String telefone, String cargo, double salario){ // inicio metodo cadastra Funcionario
+        if (this.autenticaGerente() == true){ // verifica se o metodo autenticaGerente é true, para validar o cadastro
             ArrayList<Funcionario> dadosFuncionario = new ArrayList<Funcionario>();
             Funcionario novoFuncionario = new Funcionario(nome, email, endereco, telefone, cargo, salario);  
             dadosFuncionario.add(novoFuncionario);
             this.funcionariossCadastrados.add(dadosFuncionario);    
-        }
-        else if (this.autenticaGerente() == false) { System.out.println("VOCÊ NÃO TEM ACESSO A ESSE METÓDO!");}
-    }
+        } else if (this.autenticaGerente() == false) { System.out.println("VOCÊ NÃO TEM ACESSO A ESSE METÓDO!");} // caso o metodo autenticaGerente retorne falso, informa uma mensagem de erro
+    } // fim metodo de castro de fundionario
     
     //Listagem de Associados cadastradados 
     public String listarAssociados(){
@@ -53,7 +49,6 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
     public String listarFuncionarios(){
         return funcionariossCadastrados.toString();
     }
-    
 
     //inicio metodos getters
     public String getCargo() {
@@ -71,6 +66,5 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    // fim metodos setters
-    
+    // fim metodos setters 
 } // fim classe Funcionarioo
