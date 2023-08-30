@@ -1,22 +1,23 @@
 import java.util.ArrayList;
 
-public class Pessoa{
+public class Pessoa{ // inicio classe base pessoa
 
-    //Atributos essenciais
-    public String nome;
-    public String email;
-    public String telefone;
-    public String endereco;
+    //Atributos publicos da classe Pessoa
+    public String nome; // declarando var do tipo string para o nome 
+    public String email; // declarando var do tipo string para o email
+    public String telefone; // declarando var do tipo string para o telefone, em string pois pode conter "-", "(" e ")", assim nao ocorrendo erros
+    public String endereco;// declarando var do tipo string para o endereco
 
-    //Construtor
-    public Pessoa(String nome, String email, String telefone, String endereco) {
+    // cmetodo Construtor da classe pessoa
+    public Pessoa(String nome, String email, String telefone, String endereco) { // inicio metodo pessoa
+        // instanciando os atributos
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.endereco = endereco;
-    }
+    }// fim metodo Pessoa
 
-    //getters 
+    //inicio metodos getters 
     public String getNome() {
         return nome;
     }
@@ -29,8 +30,9 @@ public class Pessoa{
     public String getEndereco() {
         return endereco;
     }
-
-    //setters
+    // fim metodos getters
+    
+    //inicio metodos setters
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -43,13 +45,11 @@ public class Pessoa{
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-
-    public String listarDados(){
-        //String para mostrar dados cadastrados
-        String display_dados = "\n"+"Nome: "+ this.nome +"\n"+ "E-mail: " + this.email +"\n"+ "Telefone: " + this.telefone+"\n" + "Endereço: " + this.endereco +"\n";
-        //retorna String
-        return display_dados;
-    }
-
+    //fim metodos setters
     
-}
+    public String listarDados(){ //inicio metodo para listar os dados
+        //String para mostrar dados cadastrados
+        String display_dados = "\nNome: "+ this.nome + "\nE-mail: " + this.email + "\nTelefone: " + this.telefone + "\nEndereço: " + this.endereco;
+        return display_dados;
+    } // fim metodo de listagem
+} // fim classe pessoa
