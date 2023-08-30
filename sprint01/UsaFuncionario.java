@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class UsaFuncionario {
     public static void main(String[] args) {
         Funcionario funcionario1 = new Funcionario("Gedervaldo Cunha Silveira", "gedervaldocunha45@gmail.com", "Rua Inacio, 791", "98856-7845", "Secretário", 1200.65);
-        Funcionario funcionario2 = new Funcionario("Adelinha de Carvalho Espernça", "linacarvalho7@gmail.com", "Rua Tupiaçi, 1246", "98889-7416", "GERENTE", 2648.49);
+        Funcionario funcionario2 = new Funcionario("Adelinha de Carvalho Espernça", "linacarvalho7@gmail.com", "Rua Tupiacu, 1246", "98889-7416", "GERENTE", 2648.49);
 
         Dependente dependentes = new Dependente("Vlaisson Mercau Cistina", "vlaissonmercau69@gmail.com", "Rua Finaldo Cunha, 49", "98846-15748", 14);
         Dependente dependentes2 = new Dependente("Clebeia Costa da Luz", "leialuz999@hotmail.com", "Rua Euseila, 798", "98846-1556", 9);
