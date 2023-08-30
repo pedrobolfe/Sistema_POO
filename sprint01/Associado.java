@@ -4,9 +4,9 @@ import java.util.Arrays;
 public class Associado extends Pessoa { // inicio classe associado herdando os atributos da classe base Pessoa
     
     //atributos da classe Associado
-    private ArrayList<String> atividadesEsportivas; // inicializando um array privado para as atividades esportivas
-    private String dadosPagemento; // inicializando uma string privada para os dados de pagamentos
-    private ArrayList<Dependente> dependentes; // inicializando uma array privado para os dependentes
+    private ArrayList<String> atividadesEsportivas; // declarando um array privado para as atividades esportivas
+    private String dadosPagemento; // declarando uma string privada para os dados de pagamentos
+    private ArrayList<Dependente> dependentes; // declarando uma array privado para os dependentes
     
     // construtor 
     public Associado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<Dependente> dependentes,ArrayList<String> atividadesEsportivas){ // inico metodo construtor Associado
