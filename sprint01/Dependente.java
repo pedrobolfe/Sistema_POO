@@ -1,25 +1,28 @@
+public class Dependente extends Pessoa{ // inicio da classe Dependente herdando os atributos da Classe Pessoa
+    // atributo da classe dependente
+    public int idade; // declarando uma var do tipo inteiro que ira representar a idade do dependente
 
-public class Dependente extends Pessoa{
-
-    public int idade;
-
-    public Dependente(String nome,  String email, String endereco, String telefone, int idade){
+    // metodo contrutor da classe dependente
+    public Dependente(String nome,  String email, String endereco, String telefone, int idade){ // inicio metodo construtor
         super(nome, email, telefone, endereco);
         this.idade = idade;
-    }
+    } // fim metodo contrutor
     
-    //getters
+    // metodo getter
     public int getIdade() {
         return idade;
     }
+    // fim metodo getter
    
-    //setters
+    //inicio metodo setter
     public void setIdade(int idade) {
         this.idade = idade;
     }
+    // fim metodo setter
+    
     @Override
     public String toString() {
         String display_info = "Nome: "+this.nome+", Idade: "+this.idade +" anos";
         return display_info;
-    }
-}
+    }// fim metodo toString()
+} // fim classe Dependente
