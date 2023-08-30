@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class Pessoa{ // inicio classe base pessoa
-    //Atributos publicos da classe Pessoa
+public class Pessoa{ // inicio super classe Pessoa
+    //Atributos publicos da super classe Pessoa
     public String nome; // declarando var do tipo string para o nome 
     public String email; // declarando var do tipo string para o email
     public String telefone; // declarando var do tipo string para o telefone, em string pois pode conter "-", "(" e ")", assim evitando possiveis erros
@@ -51,4 +51,4 @@ public class Pessoa{ // inicio classe base pessoa
         String display_dados = "\nNome: "+ this.nome + "\nE-mail: " + this.email + "\nTelefone: " + this.telefone + "\nEndereço: " + this.endereco;
         return display_dados;
     } // fim metodo de listagem
-} // fim classe pessoa
+} // fim super classe Pessoa
