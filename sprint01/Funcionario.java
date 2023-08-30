@@ -11,14 +11,14 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
     private ArrayList<ArrayList<Funcionario>> funcionariossCadastrados =new ArrayList<ArrayList<Funcionario>>();
 
     // metodo construtor
-    public Funcionario(String nome, String email,String endereco,String telefone,String cargo,double salario){
+    public Funcionario(String nome, String email, String endereco, String telefone, String cargo, double salario){
         super(nome, email, telefone, endereco);
         this.cargo = cargo;
         this.salario = salario;
     } // fim metodo cosntrutor
 
     //metódos
-    public void cadastrarAssociado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<Dependente> dependentes,ArrayList<String> atividadesEsportivas){
+    public void cadastrarAssociado(String nome, String email, String endereco ,String telefone, String dadosPagemento, ArrayList<Dependente> dependentes, ArrayList<String> atividadesEsportivas){
         ArrayList<Associado> dadosAssociado = new ArrayList<Associado>();  //Array para armazenar objeto      
         Associado novoAssociado = new Associado(nome, email, endereco, telefone, dadosPagemento, dependentes, atividadesEsportivas);
         //Salvando objeto em uma lista
