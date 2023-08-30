@@ -1,21 +1,21 @@
 import java.util.ArrayList;
 
-public class Funcionario extends Pessoa {
-    //Atributos
-    public String cargo;
-    public double salario;
+public class Funcionario extends Pessoa { // inicio classe Funcionario herdando os atributos da classe Pessoa
+    //Atributos publicos da classe Funcionario
+    public String cargo; // declarando uma var do tipo string para o cargo 
+    public double salario; // declarando uma var do tipo string para o salario
 
     //Armazenar Associados cadastrados
     private ArrayList<ArrayList<Associado>> associadosCadastrados =new ArrayList<ArrayList<Associado>>();
     //Armazenar funcionarios cadastrados
     private ArrayList<ArrayList<Funcionario>> funcionariossCadastrados =new ArrayList<ArrayList<Funcionario>>();
 
-    //construtor
+    // metodo construtor
     public Funcionario(String nome, String email,String endereco,String telefone,String cargo,double salario){
         super(nome, email, telefone, endereco);
         this.cargo = cargo;
         this.salario = salario;
-    }
+    } // fim metodo cosntrutor
 
     //metódos
     public void cadastrarAssociado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<Dependente> dependentes,ArrayList<String> atividadesEsportivas){
@@ -55,19 +55,22 @@ public class Funcionario extends Pessoa {
     }
     
 
-    //getters
+    //inicio metodos getters
     public String getCargo() {
         return cargo;
     }
     public double getSalario() {
         return salario;
     }   
-   
-    //setters
+    // fim metodos getters
+    
+    //inicio metodos setters
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
     public void setSalario(double salario) {
         this.salario = salario;
     }
-}
+    // fim metodos setters
+    
+} // fim classe Funcionarioo
