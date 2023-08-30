@@ -5,7 +5,7 @@ public class Pessoa{ // inicio classe base pessoa
     //Atributos publicos da classe Pessoa
     public String nome; // declarando var do tipo string para o nome 
     public String email; // declarando var do tipo string para o email
-    public String telefone; // declarando var do tipo string para o telefone, em string pois pode conter "-", "(" e ")", assim nao ocorrendo erros
+    public String telefone; // declarando var do tipo string para o telefone, em string pois pode conter "-", "(" e ")", assim evitando possiveis erros
     public String endereco;// declarando var do tipo string para o endereco
 
     // cmetodo Construtor da classe pessoa
