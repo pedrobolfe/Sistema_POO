@@ -5,7 +5,7 @@ public class Dependente extends Pessoa{ // inicio da classe Dependente herdando 
     // metodo contrutor da classe dependente
     public Dependente(String nome,  String email, String endereco, String telefone, int idade){ // inicio metodo construtor
         super(nome, email, telefone, endereco); // chamando o contrutor da superclasse
-        this.idade = idade;
+        this.idade = idade; // referencia uma instância da idade 
     } // fim metodo contrutor
     
     // metodo getter
