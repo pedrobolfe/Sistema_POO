@@ -32,13 +32,13 @@ public class Associado extends Pessoa {
     public void setAtividadesEsportivas(ArrayList<String> atividadesEsportivas) {
         this.atividadesEsportivas = atividadesEsportivas;
     }
-    // public void setDependentes(ArrayList<String> dependentes) {
-    //     this.dependentes = dependentes;
-    // }
+    public void setDependentes(ArrayList<Dependente> dependentes) {
+        this.dependentes = dependentes;
+    }
 
     @Override
     public String toString(){
-        String display = super.listarDados() + "Dados Pagamento: " +this.dadosPagemento + "\n"+"Dependentes: "+this.dependentes.toString() +"\n"+"Atividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray());
+        String display =super.listarDados() + "Dados Pagamento: " +this.dadosPagemento + "\n"+"Dependentes: "+this.dependentes.toString() +"\n"+"Atividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray());
         return display;
     }
 }
