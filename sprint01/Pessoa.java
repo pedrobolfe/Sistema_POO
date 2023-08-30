@@ -7,7 +7,6 @@ public class Pessoa{
     public String email;
     public String telefone;
     public String endereco;
-    private ArrayList<Pessoa> pessoasCadastradas = new ArrayList<Pessoa>();
 
     //Construtor
     public Pessoa(String nome, String email, String telefone, String endereco) {
@@ -52,7 +51,5 @@ public class Pessoa{
         return display_dados;
     }
 
-    public void cadastrarDados(Pessoa pessoa){
-        pessoasCadastradas.add(pessoa);
-    }
+    
 }
