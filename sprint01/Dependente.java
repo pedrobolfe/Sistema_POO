@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 public class Dependente extends Pessoa{
 
     public int idade;
@@ -16,5 +16,10 @@ public class Dependente extends Pessoa{
     //setters
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+    @Override
+    public String toString() {
+        String display_info = "Nome: "+this.nome+", Idade: "+this.idade +" anos";
+        return display_info;
     }
 }

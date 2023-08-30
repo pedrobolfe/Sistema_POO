@@ -18,7 +18,7 @@ public class Funcionario extends Pessoa {
     }
 
     //metódos
-    public void cadastrarAssociado(String nome, String email,String endereco,String telefone,String dadosPagemento,String dependentes,ArrayList<String> atividadesEsportivas){
+    public void cadastrarAssociado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<Dependente> dependentes,ArrayList<String> atividadesEsportivas){
         
         //Lista para armazenar objeto
         ArrayList<Associado> dadosAssociado = new ArrayList<Associado>();        

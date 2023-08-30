@@ -6,10 +6,10 @@ public class Associado extends Pessoa {
     //atributos
     private ArrayList<String> atividadesEsportivas;
     private String dadosPagemento;
-    private String dependentes;
+    private ArrayList<Dependente> dependentes;
     
     //construtor 
-    public Associado(String nome, String email,String endereco,String telefone,String dadosPagemento,String dependentes,ArrayList<String> atividadesEsportivas){
+    public Associado(String nome, String email,String endereco,String telefone,String dadosPagemento,ArrayList<Dependente> dependentes,ArrayList<String> atividadesEsportivas){
         super(nome,email,telefone,endereco);
         this.dadosPagemento = dadosPagemento;
         this.dependentes = dependentes;
@@ -38,7 +38,7 @@ public class Associado extends Pessoa {
 
     @Override
     public String toString(){
-        String display = super.listarDados() + "Dados Pagamento: " +this.dadosPagemento + "\n"+"Dependentes: "+this.dependentes+ "\n"+"Atividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray());
+        String display = super.listarDados() + "Dados Pagamento: " +this.dadosPagemento + "\n"+"Dependentes: "+this.dependentes.toString() +"\n"+"Atividades esportivas: "+ Arrays.toString(atividadesEsportivas.toArray());
         return display;
     }
 }
