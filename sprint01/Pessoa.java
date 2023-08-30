@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class Pessoa{ // inicio classe base pessoa
-
     //Atributos publicos da classe Pessoa
     public String nome; // declarando var do tipo string para o nome 
     public String email; // declarando var do tipo string para o email
