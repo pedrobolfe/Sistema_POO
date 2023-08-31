@@ -48,7 +48,7 @@ public class Pessoa{ // inicio super classe Pessoa
     
     public String listarDados(){ //inicio metodo para listar os dados
         //String para mostrar dados cadastrados
-        String display_dados = "\nNome: "+ this.nome + "\nE-mail: " + this.email + "\nTelefone: " + this.telefone + "\nEndereço: " + this.endereco;
+        String display_dados = "\nNome: " + this.nome + "\nE-mail: " + this.email + "\nTelefone: " + this.telefone + "\nEndereço: " + this.endereco;
         return display_dados;
     } // fim metodo de listagem
 } // fim super classe Pessoa
