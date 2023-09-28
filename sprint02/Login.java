@@ -8,12 +8,12 @@ public class Login {
 
     public static void main(String[] args) {
         // Cadastrar funcionários no dicionário
-        cadastrarFuncionario("joao123", "senha123");
-        cadastrarFuncionario("maria456", "senha456");
+        cadastrarFuncionario("adinaldo", "adinaldo12");
+        cadastrarFuncionario("josefina", "josefina311");
 
         // Autenticar um funcionário usando nome de usuário e senha
-        String nomeUsuario = "joao123";
-        String senha = "senha123";
+        String nomeUsuario = "joao";
+        String senha = "sla123";
 
         if (autenticarFuncionario(nomeUsuario, senha)) {
             // Exibir informações pessoais do funcionário autenticado
