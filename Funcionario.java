@@ -59,12 +59,4 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
     }   
     // fim metodos getters
     
-    //inicio metodos setters
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-    // fim metodos setters 
 } // fim classe Funcionarioo

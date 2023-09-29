@@ -28,7 +28,7 @@ public class Associado extends Pessoa { // inicio classe associado herdando os a
     @Override
     public String toString(){
         // invocando o método da superclasse
-        String display = super.listarDados() + "Dados Pagamento: "  + this.dadosPagemento + "\nDependentes: " + this.dependentes.toString() + "\nAtividades esportivas: " + Arrays.toString(atividadesEsportivas.toArray());
-        return display;
+        String display = super.listarDados() + " Dados Pagamento: "  + this.dadosPagemento + ", Dependentes: " + this.dependentes.toString() + ", Atividades esportivas: " + Arrays.toString(atividadesEsportivas.toArray());
+        return display + "\n";
     }
 } // fim classe associado

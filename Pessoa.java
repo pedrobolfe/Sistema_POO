@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+//CLASSE MÃE PESSOA
 
 public class Pessoa{ // inicio super classe Pessoa
     //Atributos publicos da super classe Pessoa
@@ -48,7 +48,7 @@ public class Pessoa{ // inicio super classe Pessoa
     
     public String listarDados(){ //inicio metodo para listar os dados
         //String para mostrar dados cadastrados
-        String display_dados = "\nNome: " + this.nome + "\nE-mail: " + this.email + "\nTelefone: " + this.telefone + "\nEndereço: " + this.endereco;
+        String display_dados ="\n"+ "Nome: " + this.nome + ", E-mail: " + this.email + ", Telefone: " + this.telefone + ", Endereço: " + this.endereco+". ";
         return display_dados;
     } // fim metodo de listagem
 } // fim super classe Pessoa
