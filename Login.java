@@ -3,6 +3,7 @@ import java.util.Map;
 
 public class Login {
     private static Map<String, String> mapaUsuarioSenha = new HashMap<>();
+    
 
     public static void main(String[] args) {
         // Cadastrar funcionários no dicionário

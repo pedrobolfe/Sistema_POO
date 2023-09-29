@@ -14,11 +14,6 @@ public class Dependente extends Pessoa{ // inicio da classe Dependente herdando 
     }
     // fim metodo getter
    
-    //inicio metodo setter
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-    // fim metodo setter
     
     @Override
     public String toString() {
