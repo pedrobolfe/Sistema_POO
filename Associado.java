@@ -25,18 +25,6 @@ public class Associado extends Pessoa { // inicio classe associado herdando os a
     }
     // fim metodos getters
 
-    // inicio metodos setters
-    public void setDadosPagemento(String dadosPagemento) {
-        this.dadosPagemento = dadosPagemento;
-    }
-    public void setAtividadesEsportivas(ArrayList<String> atividadesEsportivas) {
-        this.atividadesEsportivas = atividadesEsportivas;
-    }
-    public void setDependentes(ArrayList<Dependente> dependentes) {
-        this.dependentes = dependentes;
-    }
-    // fime metodos setters
-
     @Override
     public String toString(){
         // invocando o método da superclasse
