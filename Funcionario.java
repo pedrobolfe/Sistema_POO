@@ -13,7 +13,10 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
     //Armazenar funcionarios cadastrados
     private ArrayList<ArrayList<Funcionario>> funcionariossCadastrados =new ArrayList<ArrayList<Funcionario>>();
     //Armazenar atividades cadastradas
+    private ArrayList<ArrayList<Turmas>> turmasCadastradas = new ArrayList<ArrayList<Turmas>>();
+    //Armanezar turmas cadastradas
     private ArrayList<ArrayList<Atividades>> atividadesCadastradas = new ArrayList<ArrayList<Atividades>>();
+
 
     // metodo construtor
     public Funcionario(String nome,String email, String endereco, String telefone, String cargo, double salario,ArrayList<String> empregosAnteriores,ArrayList<String> feedbackFuncionario){
@@ -31,6 +34,14 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
         //Salvando objeto em uma lista
         dadosAssociado.add(novoAssociado);
         this.associadosCadastrados.add(dadosAssociado);
+    }
+
+    public void cadastrarAtividade(String nome, String descricao, String faixaEtaria, String niveisHabilidade,ArrayList<Turmas> turmas){
+        ArrayList<Atividades> dadosAtividade = new ArrayList<Atividades>();  //Array para armazenar objeto      
+        Atividades novaAtividade = new Atividades(nome, descricao,faixaEtaria,niveisHabilidade,turmas);
+        //Salvando objeto em uma lista
+        dadosAtividade.add(novaAtividade);
+        this.atividadesCadastradas.add(dadosAtividade);
     }
     // metodo booleano para conferir se gerente ou ñ  
     public boolean autenticaGerente(){ // inicio metodo autenticaGerente
@@ -71,6 +82,9 @@ public class Funcionario extends Pessoa { // inicio classe Funcionario herdando 
     //Listagem de Funcionários cadastrados 
     public String listarFuncionarios(){
         return funcionariossCadastrados.toString();
+    }
+    public String listarAtividades(){
+        return atividadesCadastradas.toString();
     }
 
     //inicio metodos getters
