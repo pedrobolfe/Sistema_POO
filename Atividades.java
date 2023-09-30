@@ -1,26 +1,27 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Atividades {
     private String nome;
     private String descricao;
     private String faixaEtaria;
     private String niveisHabilidade;
+    private ArrayList<Turmas> turmas;
 
-    //Informações da turma
-    private String diaSemana;
-    private String horarioInicio;
-    private String horarioTermino;
-    private ArrayList<String> turmas = new ArrayList<>(); // Lista de turmas disponíveis
-
-    // Construtor
-    public Atividade(String nome, String descricao, String faixaEtaria, String niveisHabilidade) {
+    //construto
+    public Atividades(String nome, String descricao, String faixaEtaria, String niveisHabilidade,ArrayList<Turmas> turmas) {
         this.nome = nome;
         this.descricao = descricao;
         this.faixaEtaria = faixaEtaria;
         this.niveisHabilidade = niveisHabilidade;
-        this.turmas = new ArrayList<>();
+        this.turmas = turmas;
     }
 
-    // Getters e Setters
-    // ...
+    @Override
+    public String toString(){
+        // invocando o método da superclasse
+        String display = "Nome: "+this.nome+", Descricao: "+this.descricao+", Faixa etaria: "+this.faixaEtaria + ", Niveis Habilidade "+this.niveisHabilidade + ", Turmas: "+this.turmas;
+        return display + "\n";
+    }
+
 }
