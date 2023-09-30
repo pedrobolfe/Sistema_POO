@@ -20,9 +20,7 @@ public class Associado extends Pessoa { // inicio classe associado herdando os a
     public String getDadosPagemento() {
         return dadosPagemento;
     }
-    public ArrayList<String> getAtividadesEsportivas() {
-        return atividadesEsportivas;
-    }
+
     // fim metodos getters
 
     @Override
