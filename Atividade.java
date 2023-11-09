@@ -1,20 +1,24 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class Atividades {
+
+public class Atividade {
     private String nome;
     private String descricao;
     private String faixaEtaria;
+    private String instrutor;
+    private String horario;
     private String niveisHabilidade;
     private ArrayList<Turmas> turmas;
-
+    
     //construto
-    public Atividades(String nome, String descricao, String faixaEtaria, String niveisHabilidade,ArrayList<Turmas> turmas) {
+    public Atividade(String nome, String descricao, String faixaEtaria, String niveisHabilidade,ArrayList<Turmas> turmas, String instrutor,String horario) {
         this.nome = nome;
         this.descricao = descricao;
         this.faixaEtaria = faixaEtaria;
         this.niveisHabilidade = niveisHabilidade;
         this.turmas = turmas;
+        this.instrutor = instrutor;
+        this.horario = horario;
     }
 
     @Override

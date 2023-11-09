@@ -26,8 +26,8 @@ public class UsaAtividade {
         Turmas turma2 = new Turmas("Turma B", "Terça-feira", "16:00 - 17:00");
         turmas.add(turma1);
         turmas.add(turma2);
-        funcionario1.cadastrarAtividade(nomeAtividade,descricao,faixaEtaria,niveisHabilidade,turmas);
-        funcionario2.cadastrarAtividade(nomeAtividade, descricao, faixaEtaria, niveisHabilidade, turmas);
+        funcionario1.cadastrarAtividade(nomeAtividade,descricao,faixaEtaria,niveisHabilidade,turmas,"5 e meia","felisberto");
+        funcionario2.cadastrarAtividade(nomeAtividade, descricao, faixaEtaria, niveisHabilidade, turmas,"aaa","teste");
 
         String dados = funcionario1.listarAtividades();
         System.out.println(dados);
